@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bubbly Design</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f8dfff, #ffe5ec);
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: #fff5f9;
+      border-bottom: 4px dashed #ffb3c6;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #ff69b4;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #555;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      margin: 20px 0;
+      border: 3px dotted #ffcce0;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .card h2 {
+      color: #ff4081;
+      margin-bottom: 10px;
+    }
+
+    .bubble {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      background: #ffd1dc;
+      border-radius: 50%;
+      opacity: 0.3;
+      z-index: 0;
+      animation: float 20s infinite ease-in-out;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-40px) rotate(180deg); }
+      100% { transform: translateY(0) rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to BubblySite</h1>
+    <p>Fun, friendly, and fabulous web style!</p>
+  </header>
+  <div class="container">
+    <div class="card">
+      <h2>About Us</h2>
+      <p>This is a playful and professional layout perfect for personal brands or creative businesses.</p>
+    </div>
+    <div class="card">
+      <h2>Services</h2>
+      <p>We design joyful, bubbly user experiences that pop with personality.</p>
+    </div>
+    <div class="card">
+      <h2>Contact</h2>
+      <p>Email us at: hello@bubblysite.com</p>
+    </div>
+  </div>
+
+  <!-- Decorative Bubbles -->
+  <div class="bubble" style="top: 10%; left: 5%;"></div>
+  <div class="bubble" style="top: 80%; left: 70%; background: #ffe0f0;"></div>
+  <div class="bubble" style="top: 40%; left: 85%; background: #ffccf9;"></div>
+</body>
+</html>
